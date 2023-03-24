@@ -4,13 +4,50 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DECO2017 Tracker</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <title>Task Tracker</title>
 </head>
 <body>
-    <h1>DECO2017 Tracker</h1>
+    <header>
+        <h1>Task Tracker</h1>
+    </header>
+    
+    <form id="taskform">
+        <div class="form-row">
+            <label>Name</label>
+            <input placeholder="Merchandise Prints" id="name" required>
+        </div>
 
-    <p>Tutorial week 6 content</p>
+        <div class="form-row">
+            <label>Type</label>
+            <input placeholder="Graphic Design" id="type" required>
+        </div>
+
+        <div class="form-row">
+            <label>Rate</label>
+            <input type="number" placeholder="100" id="rate" required>
+        </div>
+
+        <div class="form-row">
+            <label>Time</label>
+            <input type="number" placeholder="10" id="time" required>
+        </div>
+
+        <div class="form-row">
+            <label>Client</label>
+            <input placeholder="Ariana Grande" id="client" required>
+        </div>
+
+        <button>Add Task</button>
+    </form>
+
+    <main>
+        <h2>Tasks</h2>
+        <div class="tasklist">
+            <ul id="tasklist"></ul>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
 </body>
 </html>
